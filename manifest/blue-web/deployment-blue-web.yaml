@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: blue-web
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
