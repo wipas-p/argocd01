@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: green-web
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: green-web
+  template:
+    metadata:
+      labels:
+        app: green-web
+    spec:
+      containers:
+      - image: wipasp/green-web:1.0
+        name: green-web
+        ports:
+        - containerPort: 80
