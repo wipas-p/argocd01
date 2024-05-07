@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blue-web
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: blue-web
+  template:
+    metadata:
+      labels:
+        app: blue-web
+    spec:
+      containers:
+      - image: wipasp/blue-web:1.0
+        name: blue-web
+        ports:
+        - containerPort: 80
