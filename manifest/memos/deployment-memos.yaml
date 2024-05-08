@@ -21,7 +21,7 @@ spec:
         volumeMounts:
           - name: data
             mountPath: /var/opt/memos
-    volumes:
-      - name: data
-        persistentVolumeClaim:
-          claimName: memos-pvc    
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: memos-pvc    
