@@ -1,0 +1,6 @@
+commonLabels:
+  app: green-web
+
+resources:
+- deployment-green-web.yaml
+- svc-green-web.yaml
