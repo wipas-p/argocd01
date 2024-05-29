@@ -1,0 +1,6 @@
+commonLabels:
+  app: blue-web
+
+resources:
+- deployment-blue-web.yaml
+- svc-blue-web.yaml
