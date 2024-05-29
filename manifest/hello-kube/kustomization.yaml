@@ -1,0 +1,6 @@
+commonLabels:
+  app: hello-kube
+
+resources:
+- deployment-hello-kube.yaml
+- svc-hello-kube.yaml
