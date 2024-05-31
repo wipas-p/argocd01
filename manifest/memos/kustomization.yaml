@@ -1,0 +1,7 @@
+commonLabels:
+  app: memos
+
+resources:
+- deployment-memos.yaml
+- svc-memos.yaml
+- pvc-memos.yaml
